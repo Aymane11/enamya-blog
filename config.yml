@@ -19,8 +19,6 @@ params:
     description: "Aymane BOUMAAZA aka enamya blog"
     keywords: [Blog, enamya, Aymane BOUMAAZA]
     author: enamya
-    # author: ["Me", "You"] # multiple authors
-    images: ["https://i.ibb.co/Bcxq00M/profile-Copy.jpg"]
     DateFormat: "January 2, 2006"
 
     defaulttheme: auto
