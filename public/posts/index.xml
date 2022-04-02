@@ -9,14 +9,14 @@
       <link>https://i.ibb.co/Bcxq00M/profile-Copy.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Apr 2022 11:06:37 +0000</lastBuildDate><atom:link href="https://aymane11.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Apr 2022 12:59:18 +0000</lastBuildDate><atom:link href="https://aymane11.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://aymane11.github.io/posts/my-first-post/</link>
-      <pubDate>Sat, 02 Apr 2022 11:06:37 +0000</pubDate>
+      <title>Setup Python Environment</title>
+      <link>https://aymane11.github.io/posts/setup-python-environment/</link>
+      <pubDate>Sat, 02 Apr 2022 12:59:18 +0000</pubDate>
       
-      <guid>https://aymane11.github.io/posts/my-first-post/</guid>
-      <description>Placeholder Description</description>
+      <guid>https://aymane11.github.io/posts/setup-python-environment/</guid>
+      <description>A quick overview on how I setup my Python environment</description>
     </item>
     
   </channel>

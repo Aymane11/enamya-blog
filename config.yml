@@ -27,7 +27,7 @@ params:
     disablethemetoggle: false
     showreadingtime: true
     showsharebuttons: true
-    showtoc: false
+    showtoc: true
     tocopen: false
     showbreadcrumbs: true
     showpostnavlinks: true
