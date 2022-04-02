@@ -1,6 +1,6 @@
 baseURL: https://aymane11.github.io/
 paginate: 5
-title: enamya
+title: enamya | blog
 theme: PaperMod
 enableEmoji: true
 
@@ -78,15 +78,19 @@ outputs:
 
 menu:
     main:
+        - id: portfolio
+          name: Portfolio
+          url: https://www.enamya.me/
+          weight: 1
         - id: archives
           name: Archive
           url: /archives
-          weight: 1
+          weight: 10
         - identifier: tags
           name: Tags
           url: /tags
-          weight: 10
+          weight: 100
         - identifier: search
           name: Search
           url: /search
-          weight: 20
+          weight: 1000
