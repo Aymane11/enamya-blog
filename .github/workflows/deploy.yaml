@@ -27,6 +27,6 @@ jobs:
           user_name: Aymane11
           user_email: aymaneboumaaza@gmail.com
           publish_branch: main
-          enable_jekyll: false
+          enable_jekyll: true
           commit_message: ${{ github.event.head_commit.message }}
         #   cname: example.com
