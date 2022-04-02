@@ -1,0 +1,92 @@
+baseURL: https://aymane11.github.io/
+paginate: 5
+title: enamya
+theme: PaperMod
+enableEmoji: true
+
+enableRobotsTXT: true
+pygmentsUseClasses: true
+
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+
+params:
+    env: production
+    title: enamya blog
+    description: "Aymane BOUMAAZA aka enamya blog"
+    keywords: [Blog, enamya, Aymane BOUMAAZA]
+    author: enamya
+    # author: ["Me", "You"] # multiple authors
+    images: ["https://i.ibb.co/Bcxq00M/profile-Copy.jpg"]
+    DateFormat: "January 2, 2006"
+
+    defaulttheme: auto
+    disablethemetoggle: false
+    showreadingtime: true
+    showsharebuttons: true
+    showtoc: false
+    tocopen: false
+    showbreadcrumbs: true
+    showpostnavlinks: true
+    showcodecopybuttons: true
+    disableScrollToTop: false
+    hidemeta: false
+    hidesummary: true
+
+    profileMode:
+        enabled: false
+
+    homeInfoParams:
+        Title: Hi there 👋
+        Content: I'm Aymane (aka Enamya), AI enthusiast, and average tech enjoyer.
+
+    socialIcons:
+        - name: "github"
+          url: "https://github.com/Aymane11"
+        - name: "twitter"
+          url: "https://twitter.com/_Enamya"
+        - name: "linkedin"
+          url: "https://www.linkedin.com/in/aymaneboumaaza"
+        - name: "email"
+          url: "mailto:aymaneboumaaza@gmail.com"
+
+    editPost:
+        URL: "https://github.com/Aymane11/enamya-blog/content"
+        Text: "View on GitHub"
+        appendFilePath: true
+
+    # Search
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+# Search
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+
+menu:
+    main:
+        - id: archives
+          name: Archive
+          url: /archives
+          weight: 1
+        - identifier: tags
+          name: Tags
+          url: /tags
+          weight: 10
+        - identifier: search
+          name: Search
+          url: /search
+          weight: 20
