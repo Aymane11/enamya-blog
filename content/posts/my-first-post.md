@@ -3,6 +3,7 @@ title: "My First Post"
 date: 2022-04-02T11:06:37Z
 author: "Aymane BOUMAAZA"
 draft: false
+description: "Placeholder Description"
 tags:
  - "python"
 ---
