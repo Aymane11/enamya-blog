@@ -54,7 +54,7 @@ params:
           url: "mailto:aymaneboumaaza@gmail.com"
 
     editPost:
-        URL: "https://github.com/Aymane11/enamya-blog/content"
+        URL: "https://github.com/Aymane11/enamya-blog/blob/main/content"
         Text: "View on GitHub"
         appendFilePath: true
 
