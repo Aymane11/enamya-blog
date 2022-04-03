@@ -18,6 +18,9 @@ jobs:
         # docs: https://gohugo.io/hugo-pipes/minification/
         run: hugo
 
+      - name: List files [Temporary]
+        run: ls -al
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
