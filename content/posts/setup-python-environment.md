@@ -161,7 +161,7 @@ Before publishing my code to GitHub, I always have to re-check my code for linti
 It can be installed using the following command:
 
 ```
-pip install pre-commit
+poetry add --dev pre-commit
 ```
 
 Here's a sample of the `.pre-commit-config.yaml` configuration file:
