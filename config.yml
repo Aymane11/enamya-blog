@@ -84,11 +84,17 @@ menu:
           name: Archive
           url: /archives
           weight: 10
+        - id: Today I Learned
+          name: til
+          url: /today-i-learned
+          weight: 100
         - identifier: tags
           name: Tags
           url: /tags
-          weight: 100
+          weight: 1000
         - identifier: search
           name: Search
           url: /search
-          weight: 1000
+          weight: 10000
+
+pluralizelisttitles: false
