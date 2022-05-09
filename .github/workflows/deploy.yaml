@@ -29,4 +29,5 @@ jobs:
           publish_branch: main
           enable_jekyll: true
           commit_message: ${{ github.event.head_commit.message }}
+          keep_files: false
         #   cname: example.com
