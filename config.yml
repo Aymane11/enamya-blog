@@ -86,7 +86,7 @@ menu:
           weight: 10
         - id: Today I Learned
           name: til
-          url: /today-i-learned
+          url: /tags/til/
           weight: 100
         - identifier: tags
           name: Tags

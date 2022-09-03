@@ -8,6 +8,7 @@ tags:
   - vscode
   - snippets
   - python
+description: Visual Studio Code Snippets
 ---
 
 
