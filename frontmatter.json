@@ -2,7 +2,12 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.framework.id": "hugo",
   "frontMatter.content.publicFolder": "static",
-  "frontMatter.content.pageFolders": [],
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "posts",
+      "path": "[[workspace]]/content/posts"
+    }
+  ],
   "frontMatter.taxonomy.contentTypes": [
     {
       "name": "default",
@@ -14,11 +19,6 @@
           "type": "string"
         },
         {
-          "title": "Description",
-          "name": "description",
-          "type": "string"
-        },
-        {
           "title": "Publishing date",
           "name": "date",
           "type": "datetime",
@@ -26,9 +26,9 @@
           "isPublishDate": true
         },
         {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
+          "title": "author",
+          "name": "author",
+          "type": "string"
         },
         {
           "title": "Is in draft",
@@ -38,19 +38,25 @@
         {
           "title": "Tags",
           "name": "tags",
-          "type": "tags"
+          "type": "list"
         },
         {
-          "title": "Categories",
-          "name": "categories",
-          "type": "categories"
-        },
-        {
-          "title": "author",
-          "name": "author",
+          "title": "Description",
+          "name": "description",
           "type": "string"
         }
       ]
     }
-  ]
+  ],
+  "frontMatter.taxonomy.tags": [
+    "TIL",
+    "environment",
+    "pip",
+    "python",
+    "setup",
+    "snippets",
+    "tools",
+    "vscode"
+  ],
+  "frontMatter.taxonomy.categories": []
 }
