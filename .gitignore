@@ -43,3 +43,5 @@ hugo.linux
 # vale
 styles/
 .vale.ini
+
+.metals/
