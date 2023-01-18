@@ -5,15 +5,22 @@ theme: PaperMod
 enableEmoji: true
 
 enableRobotsTXT: true
-pygmentsUseClasses: true
+pygmentsUseClasses: false
 
 
 minify:
     disableXML: true
     minifyOutput: true
 
+# pygmentsUseClasses: false # you can remove this, just ensure it's not true
+markup:
+    highlight:
+        noClasses: true
+        style: monokai # choose any style you wish
 
 params:
+    assets:
+        disableHLJS: true
     env: production
     title: enamya blog
     description: "Aymane BOUMAAZA aka enamya blog"
