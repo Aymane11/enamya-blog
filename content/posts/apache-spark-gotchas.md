@@ -19,8 +19,8 @@ Apache Spark is an open-source, distributed computing system that provides a wid
 Spark uses a technique called **lazy evaluation** to optimize the processing of RDDs. This means that [transformations](https://spark.apache.org/docs/latest/rdd-programming-guide.html#transformations) on RDDs are not actually executed until an [action](https://spark.apache.org/docs/latest/rdd-programming-guide.html#actions) (e.g., show, count, collect, take) is called on them. This can lead to confusion, as it is not always clear when a transformation will be executed. For example, when timing a transformation, it is important to note that the transformation will not be executed until an action is called, so there is no point in timing the transformation instruction itself.
 
 ```scala
-val big_df = ...
-val transformed = big_df.filter(...).map(...) // this transformation will not be executed yet (lazy evaluation)
+val bigDf = ...
+val transformed = bigDf.filter(...).map(...) // this transformation will not be executed yet (lazy evaluation)
 transformed.count() // this action will trigger the execution of the transformation and will take more time than the transformation itself
 ```
 
@@ -125,7 +125,7 @@ drwxr-xr-x  2 root root   4096 Jan  4 20:20 my_parquet.parquet
 
 ## Number of partitions
 
-When writing to file in Apache Spark, it's important to consider the number of partitions in your data. **The more partitions you have, the more files are created**. This can be beneficial if you are working with a large dataset and want to parallelize the writing process. However, if you have a small dataset, using too many partitions can lead to unnecessary overhead and slower performance, and vice verca when working with large dataframes and having small number of partitions will result in less files but bigger ones. It is important to carefully consider the size and structure of your dataset when deciding on the number of partitions to use.
+When writing to file in Apache Spark, it's important to consider the number of partitions in your data. **The more partitions you have, the more files are created**. This can be beneficial if you are working with a large dataset and want to parallelize the writing process. However, if you have a small dataset, using too many partitions can lead to unnecessary overhead and slower performance, and vice versa when working with large dataframes and having small number of partitions will result in less files but bigger ones. It is important to carefully consider the size and structure of your dataset when deciding on the number of partitions to use.
 
 ### Small DataFrame
 
