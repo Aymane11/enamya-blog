@@ -55,8 +55,6 @@ params:
           url: "https://twitter.com/_Enamya"
         - name: "linkedin"
           url: "https://www.linkedin.com/in/aymaneboumaaza"
-        - name: "email"
-          url: "mailto:aymaneboumaaza@gmail.com"
 
     editPost:
         URL: "https://github.com/Aymane11/enamya-blog/blob/main/content"
