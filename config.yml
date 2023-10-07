@@ -1,4 +1,4 @@
-baseURL: https://aymane11.github.io/
+# baseURL: https://aymane11.github.io/
 paginate: 5
 title: enamya | blog
 theme: PaperMod
