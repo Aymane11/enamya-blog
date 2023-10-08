@@ -33,4 +33,4 @@ There are several ways to set it up:
   ```
 
 Once you set it up, you will get an error message if you try to install a package without being in a virtual environment:
-![pip error message](/pip_require_venv.png)
+{{< figure src="/img/pip_require_venv.png" align="center" alt="ERROR: Could not find an activated virtualenv (required)." caption="pip error message" border="#f8f4f0" >}}

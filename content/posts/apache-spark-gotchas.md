@@ -33,12 +33,12 @@ There are two main strategies for performing joins in Spark: broadcast joins and
 ### Broadcast joins
 
 Broadcast joins are used when one of the dataframes being joined is small enough to fit in **memory** ([10MB by default](https://spark.apache.org/docs/latest/sql-performance-tuning.html#other-configuration-options:~:text=1.3.0-,spark.sql.autoBroadcastJoinThreshold,-10485760%20(10%20MB))). Spark will **send a copy of the small dataframe to all nodes in the cluster** (hence the name **broadast** join), and then perform the join locally on each node. This is generally faster than a shuffle join, but it can lead to out of memory errors if the dataframe is too large.
-![broadcast join](/broadcast_join.png)
+{{< figure src="/img/broadcast_join.png" align="center" alt="Broadcast Join" caption="Broadcast Join" border="#f8f4f0" >}}
 
 ### Shuffle joins
 
 In shuffle joins, Spark will **shuffle the dataframes partitions between nodes**, to ensure that all data with the same key is on the same node. This is generally slower than a broadcast join because of all the shuffling that occurs, but it can be used to join dataframes of any size.
-![shuffle join](/shuffle_join.png)
+{{< figure src="/img/shuffle_join.png" align="center" alt="Shuffle Join" caption="Shulffle Join" border="#f8f4f0" >}}
 
 > See: [Spark Join Strategies - How & What?](https://towardsdatascience.com/strategies-of-spark-join-c0e7b4572bcf) and [The art of joining in Spark](https://towardsdatascience.com/the-art-of-joining-in-spark-dcbd33d693c)
 
