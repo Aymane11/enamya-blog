@@ -31,7 +31,7 @@ params:
     defaulttheme: auto
     disablethemetoggle: false
     showreadingtime: true
-    showsharebuttons: true
+    showsharebuttons: false
     showtoc: true
     tocopen: false
     showbreadcrumbs: true
