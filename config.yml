@@ -46,7 +46,7 @@ params:
 
     homeInfoParams:
         Title: Hi there 👋
-        Content: I'm Aymane (aka Enamya), AI enthusiast, and average tech enjoyer.
+        Content: I'm Aymane (aka Enamya), AI enthusiast, and tech enjoyer.
 
     socialIcons:
         - name: "github"
