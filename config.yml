@@ -17,6 +17,9 @@ markup:
     highlight:
         noClasses: true
         style: monokai # choose any style you wish
+    defaultMarkdownHandler: blackFriday
+    blackFriday:
+      hrefTargetBlank: true
 
 params:
     assets:
