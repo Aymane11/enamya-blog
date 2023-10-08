@@ -47,16 +47,5 @@
         }
       ]
     }
-  ],
-  "frontMatter.taxonomy.tags": [
-    "TIL",
-    "environment",
-    "pip",
-    "python",
-    "setup",
-    "snippets",
-    "tools",
-    "vscode"
-  ],
-  "frontMatter.taxonomy.categories": []
+  ]
 }
