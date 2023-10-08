@@ -1,5 +1,5 @@
 ---
-title: "Lessons learned from developing LLM bots"
+title: "Lessons learned from developing LLM-powered applications"
 date: 2023-10-08T15:05:53+01:00
 author: "Aymane BOUMAAZA"
 draft: false
