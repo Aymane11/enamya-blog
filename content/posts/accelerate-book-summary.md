@@ -50,9 +50,9 @@ The book emphasizes that organizational culture plays a crucial role in software
 High performance requires technical practices that enable rapid, reliable software delivery:
 
 - **[Continuous Delivery Practices](https://continuousdelivery.com/implementing/patterns/)**:
-    - Version control for ALL components (not just code)
+    - Version control for **ALL** components (not just code)
     - Automated testing at multiple levels
-    - Trunk-based development (avoiding long-lived branches)
+    - Short-lived branches (the book recommends Trunk-based development)
     - Early and automated security integration
     - Deployment automation
 
@@ -71,8 +71,8 @@ The book emphasizes that sustainable high performance requires attention to huma
 
 - **Team Dynamics**:
   - Autonomous teams with clear missions
-  - Cross-functional collaboration
-  - Psychological safety
+  - Cross-functional collaboration (Inter-team trust, celebrate collaborative successes, etc.)
+  - Psychological safety (Safe to take risks, make mistakes, etc.)
   - Learning from failure
 
 - **Leadership Practices**:
