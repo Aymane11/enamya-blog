@@ -1,5 +1,5 @@
 ---
-title: "Check Multiple Types Python"
+title: "Check Multiple Types in Python"
 date: 2025-10-21T23:25:32+01:00
 author: "Aymane BOUMAAZA"
 draft: false
