@@ -10,7 +10,7 @@ tags:
  - type-checking
 ---
 
-Today I learned how to check for multiple types in Python -in a single line-.
+Today I learned how to check for multiple types in Python -in a single call-.
 
 ## TL;DR:
 
