@@ -68,6 +68,7 @@ This limitation is handled in different ways in other languages and libraries.
 - [Rust's bcrypt](https://docs.rs/bcrypt/latest/bcrypt/#functions) truncates the password by default, but offers `non_truncating` methods to raise `BcryptError::Truncation` error if the password is longer than 72 bytes.
 - Spring Security's base class `BCrypt` offers the method `hashpw` with `for_check` flag (weird name, right ?) to [raise `IllegalArgumentException`](https://github.com/spring-projects/spring-security/blob/9dde69746f7512f3b6df3641afa10b71db51ad4c/crypto/src/main/java/org/springframework/security/crypto/bcrypt/BCrypt.java#L616) if `for_check = false`, while I havent found a way to pass a similar flag to the `BCryptPasswordEncoder` class.
 
+In 2024, Okta -a major security service provider- had a security incident due to this limitation, [they announced](https://trust.okta.com/security-advisories/okta-ad-ldap-delegated-authentication-username/) that the incident was caused by using bcrypt to hash cache keys for their AD/LDAP delegated authentication feature, which allowed attackers to use new usernames with old cached keys to authenticate to the service and gain access to user accounts.
 
 To summarize, bcrypt is still fine for typical passwords **<72 bytes**, but consider other options for future-proof security.
 
