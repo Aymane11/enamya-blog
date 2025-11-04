@@ -57,7 +57,7 @@ If you don't want to worry about this limitation, you have several alternatives:
 
 - You can always enforce the password length to be less than or equal to 72 bytes by yourself, but it's not recommended to do so.
 
-However, [since version 5.0.0](https://github.com/pyca/bcrypt/blob/443366fcdd06c56c825ba7ac58cb8d7630cea1b2/CHANGELOG.rst?plain=1#L10C1-L12C62), bcrypt began raising errors when hashing passwords longer than 72 bytes, this commit introduces the change: [Raise `ValueError` if password is longer than 72 bytes](https://github.com/pyca/bcrypt/commit/d50ab05b2bece07d5c8d6a4179064fc714fd9126)
+However, [since version 5.0.0](https://github.com/pyca/bcrypt/blob/443366fcdd06c56c825ba7ac58cb8d7630cea1b2/CHANGELOG.rst?plain=1#L10C1-L12C62), Python's `bcrypt` package began raising errors when hashing passwords longer than 72 bytes, this commit introduces the change: [Raise `ValueError` if password is longer than 72 bytes](https://github.com/pyca/bcrypt/commit/d50ab05b2bece07d5c8d6a4179064fc714fd9126)
 
 {{< figure src="/img/bcrypt_v5_error.png" align="center" alt="bcrypt.hashpw raises an error since version 5.0.0" caption="bcrypt.hashpw raises an error since version 5.0.0" border="#f8f4f0" width="100%" >}}
 
