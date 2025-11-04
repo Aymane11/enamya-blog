@@ -61,7 +61,13 @@ However, [since version 5.0.0](https://github.com/pyca/bcrypt/blob/443366fcdd06c
 
 {{< figure src="/img/bcrypt_v5_error.png" align="center" alt="bcrypt.hashpw raises an error since version 5.0.0" caption="bcrypt.hashpw raises an error since version 5.0.0" border="#f8f4f0" width="100%" >}}
 
-This check is also implemented in other languages such as [Go](https://pkg.go.dev/golang.org/x/crypto/bcrypt#GenerateFromPassword).
+This limitation is handled in different ways in other languages and libraries.
+
+- [Go raises an error](https://pkg.go.dev/golang.org/x/crypto/bcrypt#GenerateFromPassword) when the password is longer than 72 bytes
+- OpenBSD's bcrypt implementation [truncates the password](https://github.com/openbsd/src/blob/be88feada38d370546228da28b63a078a676d0ca/lib/libc/crypt/bcrypt.c#L127) if it's longer than 72 bytes
+- [Rust's bcrypt](https://docs.rs/bcrypt/latest/bcrypt/#functions) truncates the password by default, but offers `non_truncating` methods to raise `BcryptError::Truncation` error if the password is longer than 72 bytes.
+- Spring Security's base class `BCrypt` offers the method `hashpw` with `for_check` flag (weird name, right ?) to [raise `IllegalArgumentException`](https://github.com/spring-projects/spring-security/blob/9dde69746f7512f3b6df3641afa10b71db51ad4c/crypto/src/main/java/org/springframework/security/crypto/bcrypt/BCrypt.java#L616) if `for_check = false`, while I havent found a way to pass a similar flag to the `BCryptPasswordEncoder` class.
+
 
 To summarize, bcrypt is still fine for typical passwords **<72 bytes**, but consider other options for future-proof security.
 
